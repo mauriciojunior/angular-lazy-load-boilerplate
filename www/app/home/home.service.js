@@ -1,9 +1,9 @@
 (function() {
-	'use strict';
+	'use strict'
 
 	angular
 		.module('app')
-		.service('HomeService', HomeService);
+		.service('HomeService', HomeService)
 
 		function HomeService() {
 			return {
@@ -12,4 +12,4 @@
 				}
 			}
 		}
-})();
+})()
