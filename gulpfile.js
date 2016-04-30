@@ -1,11 +1,11 @@
 (function() {
-	'use stric';
+	'use stric'
 
 	var gulp = require('gulp')
 		, browserSync = require('browser-sync').create()
 		, uglify = require('gulp-uglify')
 		, concat = require('gulp-concat')
-		, reload = browserSync.reload;
+		, reload = browserSync.reload
 
 	gulp.task('js', function() {
 		gulp.src('./www/app/**/*.js', { base: '.' })
@@ -34,15 +34,15 @@
 			server: {
 				baseDir: './build/www'
 			}
-		});
-	});
-
+		})
+	})
+	
 	gulp.task('watch', function () {
 		console.log(reload)
-    gulp.watch('www/app/**/*.css', ['css', reload]);
-    gulp.watch('www/**/*.html', ['html', reload]);
-    gulp.watch('www/app/**/*.js', ['js', reload]);
-	});
-
-	gulp.task('default', ['html', 'css', 'js', 'copy-lib', 'watch', 'browser-sync']);
-})();
+    gulp.watch('www/app/**/*.css', ['css', reload])
+    gulp.watch('www/**/*.html', ['html', reload])
+    gulp.watch('www/app/**/*.js', ['js', reload])
+	})
+	
+	gulp.task('default', ['html', 'css', 'js', 'copy-lib', 'watch', 'browser-sync'])
+})()
