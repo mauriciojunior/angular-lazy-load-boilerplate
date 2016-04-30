@@ -1,11 +1,11 @@
 (function() {
-	'use strict';
+	'use strict'
 
 	angular
 		.module('app')
-		.controller('AppController', AppController);
+		.controller('AppController', AppController)
 
 		function AppController () {
-			console.log(this);
+			console.log(this)
 		}
-})();
+})()
