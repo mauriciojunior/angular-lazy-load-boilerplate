@@ -1,5 +1,5 @@
 (function() {
-  'use strict';
+  'use strict'
 
   angular
     .module('app', [
@@ -30,16 +30,16 @@
               return $ocLazyLoad.load([
                 'app/home/home.controller.js',
                 'app/home/home.service.js'
-              ]);
+              ])
             }]
           }
         })
 
-        $urlRouterProvider.otherwise('/home');
+        $urlRouterProvider.otherwise('/home')
 
         $ocLazyLoadProvider.config({
           debug: true,
           events: true,
         })
     })
-})();
+})()
